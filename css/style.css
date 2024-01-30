@@ -1,0 +1,174 @@
+:root {
+    --black1: #0B090A;
+    --black2: #161A1D;
+    --White1: #FFFFFF;
+    --White2: #F5F3F4;
+    --White3: #D3D3D3;
+    --Red1: #BA181B;
+    --Red2: #E5383B;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+#header-container,
+#hero-container {
+    background-color: var(--black1);
+    color: var(--White1);
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 24px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 20px 40px;
+    color: var(--White1);
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: var(--Red1); 
+}
+ .btn-primary:hover{
+    background-color: var(--Red2);
+    cursor: pointer;
+ }
+
+.btn-outline {
+    border: 2px solid var(--White1);
+    background-color: transparent;
+    padding: 12px 24px;
+    font-size: 0.8rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero-text,
+.hero-img {
+    flex: 1;
+    /*dividir os elementos igualmente*/
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*Alinha os itens ao início*/
+    gap: 16px;
+    /*espaçamento entre um elemento e outro*/
+}
+
+.hero-text__title {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.hero-text__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.services-list {
+    display: flex;
+    margin-top: 48px;
+    gap: 32px; /*espaçamento entre os elementos*/
+}
+
+.service-card {
+    background-color: var(--White2);
+    border: 2px solid var(--White3);
+}
+
+.service-card img {
+    width: 100%;
+}
+
+#services-container {
+    padding: 96px 72px;
+}
+
+.service-card__text {
+    padding: 32px;
+}
+
+.service-card__text h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.service-card__text p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.overtitle {
+    color: var(--Red2);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+#location-container{
+    background-color: var(--White2);
+
+}
+
+#location-container.location {
+    padding: 96px 72px 48px 72px;
+}
+
+footer {
+    background-color: var(--black1);
+    color: var(--White1);
+    display: flex;
+    justify-content: space-between;padding: 48px 72px;
+    align-items: center;
+    padding: 48px 72px;
+
+}
+    
+.footer-copy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+}
